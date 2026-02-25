@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrandBoost AI - Drone & Logo Services</title>
+    <meta name="description" content="BrandBoost AI offers drone marketing services and a free logo generator for startups. Try our futuristic tools and build your brand instantly." />
+    <meta name="keywords" content="logo generator, drone marketing, startup branding, free logo" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Using a static page makes deployment simple; see README for free hosting instructions -->
+    <header class="navbar">
+        <div class="brand">BrandBoost AI</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#logo-maker">Logo</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>BrandBoost AI</h1>
+        <p>Futuristic tools for startups: drone media, analytics, and instant logo generation.</p>
+        <button class="cta-btn" onclick="document.getElementById('logo-maker').scrollIntoView({behavior:'smooth'})">Make a Logo</button>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-card">
+                <h3>Aerial Campaigns</h3>
+                <p>High-impact video and photo from the sky.</p>
+            </div>
+            <div class="service-card">
+                <h3>Data Analytics</h3>
+                <p>Insights derived from airborne sensors.</p>
+            </div>
+            <div class="service-card">
+                <h3>Event Coverage</h3>
+                <p>Live streaming with dynamic drone shots.</p>
+            </div>
+            <div class="service-card">
+                <h3>Logo Generator</h3>
+                <p>Instant AI-style logos for startups and small businesses.</p>
+            </div>
+        </div>
+    </section>
+    <section id="logo-maker" class="logo-generator">
+        <h2>Logo Generator</h2>
+        <p>Enter your company name and click generate to see a sample logo.</p>
+        <div style="max-width:600px;margin:0 auto;display:flex;flex-direction:column;">
+            <input id="logo-name" placeholder="Business Name" />
+            <button id="generate-logo">Generate Logo</button>
+            <div id="logo-preview" style="margin-top:1rem;text-align:center;"></div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>You can also reach us directly at <a href="mailto:info@brandboostai.com">info@brandboostai.com</a>.</p>
+        <p>Send us your feedback using the form below. Submitted messages are stored locally and shown here (for demo purposes).</p>
+        <form id="contact-form">
+            <input name="name" placeholder="Your Name" required />
+            <input name="email" type="email" placeholder="Your Email" required />
+            <textarea name="message" rows="4" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="feedback-list" style="margin-top:2rem;">
+            <h3>Feedback received:</h3>
+            <ul id="feedback-items"></ul>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+    <footer style="text-align:center; padding:1rem; margin-top:2rem; background:#0d0d14; color:#888; font-size:0.9rem;">
+        <p>Website: <a href="https://brandboostai.tk" style="color:#00e5ff;">https://brandboostai.tk</a></p>
+        <p>Email: <a href="mailto:info@brandboostai.com" style="color:#00e5ff;">info@brandboostai.com</a></p>
+    </footer>
+</body>
+</html>

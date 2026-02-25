@@ -1,0 +1,22 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you ever use Node tools)
+node_modules/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Optional environment files
+.env
+
+# Generated build output (if using any build tool)
+dist/
+build/
+
+# Ignore GitHub Pages cache
+.github/
