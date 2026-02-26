@@ -19,4 +19,5 @@ dist/
 build/
 
 # Ignore GitHub Pages cache
-.github/
+# (now that we use workflows we need to track .github files)
+# github/
